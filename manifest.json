@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "whatsAccelerator",
   "version": "0.1",
-  "content_scripts":[{
-      
+  "content_scripts":[
+    {    
       "matches":[
         "https://web.whatsapp.com/"
       ],
@@ -15,5 +15,4 @@
       ]
     }
   ]
-
 }
