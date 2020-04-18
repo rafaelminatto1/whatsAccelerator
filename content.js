@@ -4,22 +4,35 @@ const interval = setInterval(()=>{
     console.log(header)
     clearInterval(interval)
     
-    const button = document.createElement("button")
-    button.innerHTML="2x"
-    button.classList.add("twoTimesButton")
-    button.addEventListener("click",()=>{
+    const buttonX1 = document.createElement("button")
+    buttonX1.innerHTML="1x"
+    buttonX1.classList.add("speed1Button")
+    buttonX1.addEventListener("click",()=>{
+
+      const audios = document.querySelectorAll("audio");
+      console.log(audios)
+      audios.forEach((audio)=>{
+        console.log(audio)
+        audio.playbackRate = 1
+              
+      })
+    })
+    const buttonX2 = document.createElement("button")
+    buttonX2.innerHTML="2x"
+    buttonX2.classList.add("speed2Button")
+    buttonX2.addEventListener("click",()=>{
+
       const audios = document.querySelectorAll("audio");
       console.log(audios)
       audios.forEach((audio)=>{
         console.log(audio)
         audio.playbackRate = 2
-         /*  if(audio.playbackRate = 2){
-            audio.playbackRate = 1
-          }
- */
+              
       })
     })
-    header.appendChild(button)
+
+    header.appendChild(buttonX1)
+    header.appendChild(buttonX2)
   }
 
 },1000)
