@@ -13,15 +13,13 @@ const interval = setInterval(()=>{
       audios.forEach((audio)=>{
         console.log(audio)
         audio.playbackRate = 2
-        
-        
-        
+         /*  if(audio.playbackRate = 2){
+            audio.playbackRate = 1
+          }
+ */
       })
     })
     header.appendChild(button)
-    
-
-
   }
 
 },1000)
