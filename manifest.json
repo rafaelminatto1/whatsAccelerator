@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name":"whatsAccelerator",
+  "version": "0.1",
+  "content_scripts":[
+    {
+      //selects the sites that can use the extension
+      "matches":[
+        "https://web.whatsapp.com/"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+
+}
