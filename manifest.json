@@ -1,7 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "whatsAccelerator",
-  "version": "0.1",
+  "name": "whats Accelerator",
+  "version": "0.2.1",
+  "page_action": {
+    "default_icon": {                   
+      "16": "images/icon16.png",           
+      "24": "images/icon24.png",           
+      "32": "images/icon32.png"            
+    },
+    "default_title": "Whats Accelerator"   
+      },
   "content_scripts":[
     {    
       "matches":[
